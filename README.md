@@ -13,7 +13,7 @@ The following public methods are available:
 
 -> 	void deleteKey(k const key)  : deletes the node containing the key. Splay operation is then applied on the last accessed node.
 
--> 	v const* search(k const key) : searches the splay tree for the given key. If the key is found, then a pointer the value of the node containing the key is returned. Splay operation is also applied on this node. If the key is not found, the splay operation is applied on the last accessed node.
+-> 	v const* search(k const key) : searches the splay tree for the given key. If the key is found, then a pointer to the value of the node containing the key is returned. Splay operation is also applied on this node. If the key is not found, the splay operation is applied on the last accessed node.
 
 -> 	void deleteAll() : deletes all the nodes of the splay tree.
 
