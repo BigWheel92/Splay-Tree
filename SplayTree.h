@@ -445,6 +445,6 @@ public:
 
 	~SplayTree()
 	{
-		deleteAll();
+		deleteAll(this->root);
 	}
 };
