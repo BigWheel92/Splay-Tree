@@ -18,3 +18,5 @@ The following public methods are available:
 -> 	void deleteAll() : deletes all the nodes of the splay tree.
 
 -> ~SplayTree() :  destructor.
+
+The above public methods make use of other private recursive member methods.
