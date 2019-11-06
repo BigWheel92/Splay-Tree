@@ -53,7 +53,7 @@ class SplayTree
 
 	v const* search(SplayNode<k, v>* node, k key)
 	{
-		if (node->key == key)
+		if (node->key == key) //key has been found, so splay the node containing this key, and then return the pointer to the value.
 		{
 			this->splay(node);
 			return &root->value;
