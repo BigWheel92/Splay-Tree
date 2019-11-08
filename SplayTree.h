@@ -86,9 +86,12 @@ class SplayTree
 
 	void deleteKey(SplayNode<k, v>*& current, k const key)
 	{
-		//the key to delete does not exist in the tree.
-		if (current == nullptr)
+		//the key to delete does not exist in the tree, so splay the last access node and return from the function.
+		if ((key > current->key&& current->rChild == nullptr) || (key < current->key && current->lChild == nullptr))
+		{
+			splay(current);
 			return;
+		}
 
 		else if (key > current->key)
 		{	//move to the right subtree
